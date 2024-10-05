@@ -1,0 +1,80 @@
+
+
+
+.card{
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-btn{
+   
+    transition: background-color 0.5s ease-in-out , transform 0.5s  ease-in-out; 
+
+}
+.add-btn:hover{
+    border: 1px solid black;
+}
+.add-btn:hover{
+  
+    background-color: rgb(234, 252, 132);
+    color:black;
+    transform: scale(1.2);
+}
+
+.search-bar:focus{
+    box-shadow: 0 8px 8px rgb(151, 243, 228);
+}
+
+.snackbar{
+    position: fixed;
+    bottom: 25px;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 100;
+    width: auto;
+}
+.header-title{
+    font-family: 'Bungee Tint', cursive;
+    animation: squeeze 2s infinite;
+}
+@keyframes squeeze {
+    0%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scaleX(1.2);
+        background-color: beige;
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+
+.card-title{
+    animation: color 6s infinite;
+    text-transform: uppercase;
+}
+@keyframes color {
+    0%{
+        background-color: rgb(123, 255, 204);
+    }
+    50%{
+        background-color: rgb(241, 255, 159);
+    }
+    75%{
+        background-color: rgb(247, 220, 130);
+    }
+    100%{
+        background-color: rgb(123, 255, 204);
+    }
+}
+
+
+.shine{
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.shine:hover{
+    transform: scaleX(0.75);
+}
